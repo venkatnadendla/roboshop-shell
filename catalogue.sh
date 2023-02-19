@@ -12,7 +12,6 @@ cp configs/catalogue.service /etc/systemd/system/catalogue.service
 systemctl daemon-reload
 systemctl enable catalogue
 systemctl start catalogue
-
 cp configs/mongodb.repo /etc/yum.repors.d/mongodb.repo
 yum install mongodb-org-shell -y
 mongo --host mongodb.venkatdevops.online </app/schema/catalogue.js
